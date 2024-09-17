@@ -1,0 +1,82 @@
+/* Objectives Section Styling */
+.objectives {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 40px;
+    background-color: #466393;
+    font-family: 'Poppins', sans-serif; /* Clean, modern font */
+  }
+  
+  /* Title Styling with blue underline */
+  .objectives-title {
+    color: white;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .objectives-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 3px;
+    background-color: #007bff; /* Blue underline */
+  }
+  
+  /* Objective blocks styling */
+  .objective {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .objective.reverse {
+    flex-direction: row-reverse; /* Alternate layout for the second objective */
+  }
+  
+  /* Image styling */
+  .objective-image {
+    flex: 1;
+  }
+  
+  .objective-image img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Text content styling */
+  .objective-content {
+    flex: 1;
+  }
+  
+  .objective-content h3 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  .objective-content p {
+    font-size: 1.2rem;
+    color: #dcd5d5;
+  }
+  
+  @media (max-width: 768px) {
+    /* Stack the content for smaller screens */
+    .objective {
+      flex-direction: column;
+    }
+  
+    .objective.reverse {
+      flex-direction: column;
+    }
+  
+    .objective-image, .objective-content {
+      width: 100%;
+    }
+  }
+  
