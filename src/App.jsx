@@ -6,6 +6,7 @@ import Objectives from './components/Objectives';
 import Footer from './components/Footer';
 import Gallery from './components/Gallery'; // Import Gallery component
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import MembersSection from './components/Members';
 
 function App() {
   return (
@@ -17,9 +18,24 @@ function App() {
           path="/"
           element={
             <>
+            <div id="hero">
+
               <Hero />
+            </div>
+              <div id="about-us">
+
               <AboutUs />
+              </div>
+
+              <div id="objectives">
+
               <Objectives />
+              </div>
+
+              <div id="members">
+
+              <MembersSection />
+              </div>
               <Footer />
             </>
           }

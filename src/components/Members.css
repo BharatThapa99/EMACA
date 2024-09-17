@@ -1,0 +1,124 @@
+/* Section styling */
+.members-section {
+    background: linear-gradient(180deg, #2e3b4e 50%, #f7f7f7 50%);
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .members-section-header {
+    margin-bottom: 50px;
+  }
+  
+  .members-section-header h2 {
+    margin: 10px;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .members-section-header p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #b0b0b0;
+  }
+  
+  /* Slider container */
+  .slider-container {
+    position: relative;
+  }
+  
+  /* Member card styling */
+  .member-card {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    width: 200px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-top: 15px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Image styling */
+  .member-image {
+    
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #f7f7f7;
+  }
+  
+  .member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Member name and position */
+  .member-info h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0 5px;
+  }
+  
+  .member-info p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  /* Social media icons */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .social-icons a {
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #007bff;
+  }
+  
+  .slick-prev, .slick-next {
+    font-size: 30px;
+    color: #000000 !important; /* Ensure a visible color */
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .slick-prev {
+    left: 30px !important;
+  }
+  
+  .slick-next {
+    right: 30px !important;
+  }
+  
+  /* Slider styles */
+  .slick-slide {
+    display: flex !important;
+    justify-content: center;
+  }
+  
+  .slick-slide img {
+    max-width: 100%;
+    height: auto;
+  }
+  

@@ -1,36 +1,83 @@
 import React, { useState } from 'react';
 import './Gallery.css';
-import image1 from '../assets/Hero-bg.jpg'
-import image2 from '../assets/security.jpeg'
-import picture1 from '../assets/first-session/Picture1.jpg'
-import picture2 from '../assets/first-session/Picture2.jpg'
-import picture3 from '../assets/first-session/Picture3.jpg'
-import picture4 from '../assets/first-session/Picture4.jpg'
-import picture5 from '../assets/first-session/Picture5.jpg'
-import picture6 from '../assets/first-session/Picture6.jpg'
-import picture7 from '../assets/first-session/Picture7.jpg'
-import picture8 from '../assets/first-session/Picture8.jpg'
-import picture9 from '../assets/first-session/Picture9.jpg'
 
-import picture10 from '../assets/third-session/Picture10.jpg'
 
 // Data: Gallery sections and their images
 const galleryData = {
-  "First Session of EMACA on 4th Magh, 2069": [
-    picture1,
-    picture2,
-    picture3,
-    picture4,
-    picture5,
-    picture6,
-    picture7,
-    picture8,
-    picture9,
+  "First Session of EMACA 2069": [
+    '/images/first-session/Picture1.jpg',
+    '/images/first-session/Picture2.jpg',
+    '/images/first-session/Picture3.jpg',
+    '/images/first-session/Picture4.jpg',
+    '/images/first-session/Picture5.jpg',
+    '/images/first-session/Picture6.jpg',
+    '/images/first-session/Picture7.jpg',
+    '/images/first-session/Picture8.jpg',
+    '/images/first-session/Picture9.jpg',
+    
   ],
-  "Aviation Seminar": [
-    image2,
-    image1,
-    image2,
+  "Third Session of EMACA 2073": [
+    '/images/third-session/Picture10.jpg',
+    '/images/third-session/Picture11.jpg',
+    '/images/third-session/Picture12.jpg',
+    '/images/third-session/Picture13.jpg',
+    '/images/third-session/Picture14.jpg',
+    '/images/third-session/Picture15.jpg',
+    '/images/third-session/Picture16.jpg',
+    '/images/third-session/Picture17.jpg',
+    '/images/third-session/Picture18.jpg',
+    '/images/third-session/Picture19.jpg',
+    '/images/third-session/Picture20.jpg',
+    '/images/third-session/Picture21.jpg',
+    '/images/third-session/Picture22.jpg',
+    '/images/third-session/Picture23.jpg',
+    '/images/third-session/Picture24.jpg',
+    '/images/third-session/Picture25.jpg',
+    '/images/third-session/Picture26.jpg',
+    '/images/third-session/Picture27.jpg',
+    '/images/third-session/Picture28.jpg',
+    '/images/third-session/Picture29.jpg',
+
+    
+  ],
+  "Fifth Session of EMACA": [
+    '/images/fifth-session/Picture30.jpg',
+    ''
+  ],
+  "Volleyball Competition": [
+    '/images/volleyball/Picture31.jpg',
+    '/images/volleyball/Picture32.jpg',
+    '/images/volleyball/Picture33.jpg',
+    '/images/volleyball/Picture34.png',
+  ],
+  "Sports Team":[
+    '/images/sports-team/Picture35.jpg',
+    '/images/sports-team/Picture36.jpg',
+    '/images/sports-team/Picture37.jpg',
+    '/images/sports-team/Picture38.jpg',
+
+  ],
+  "Futsal Competition": [
+    '/images/futsal-competition/Picture39.png',
+    '/images/futsal-competition/Picture40.jpg',
+    '/images/futsal-competition/Picture41.jpg',
+    '/images/futsal-competition/Picture42.jpg',
+    '/images/futsal-competition/Picture43.jpg',
+    '/images/futsal-competition/Picture44.jpg',
+    '/images/futsal-competition/Picture45.jpg',
+    '/images/futsal-competition/Picture46.jpg',
+    '/images/futsal-competition/Picture47.jpg',
+    '/images/futsal-competition/Picture48.jpg',
+    '/images/futsal-competition/Picture49.jpg',
+    '/images/futsal-competition/Picture50.jpg',
+    '/images/futsal-competition/Picture51.jpg',
+    '/images/futsal-competition/Picture52.jpg',
+    '/images/futsal-competition/Picture53.jpg',
+    '/images/futsal-competition/Picture54.jpg',
+    '/images/futsal-competition/Picture55.jpg',
+    '/images/futsal-competition/Picture56.jpg',
+    '/images/futsal-competition/Picture58.jpg',
+    '/images/futsal-competition/Picture59.jpg',
   ],
   // Add more galleries as needed
 };
@@ -71,6 +118,7 @@ const Gallery = () => {
   
     return (
       <div className="gallery-container">
+        <h1 className='gallery-title'>EMACA Gallery</h1>
         {!selectedGallery ? (
           // Gallery thumbnails
           <div className="gallery-thumbnails">
